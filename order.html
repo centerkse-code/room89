@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สั่งซื้อสินค้า - Room Scent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">Room Scent 🕯️</a>
+    <nav>
+      <a href="index.html">หน้าแรก</a>
+      <a href="product.html">สินค้าทั้งหมด</a>
+      <a href="admin.html">แอดมิน</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="form-container">
+      <h2 style="text-align: center; margin-bottom: 1.5rem; font-weight: 500;">ฟอร์มสั่งซื้อสินค้า</h2>
+      <form id="orderForm">
+        <div class="form-group">
+          <label for="customerName">ชื่อลูกค้า *</label>
+          <input type="text" id="customerName" required placeholder="กรอกชื่อ-นามสกุล">
+        </div>
+        <div class="form-group">
+          <label for="contact">เบอร์โทร / Line ID *</label>
+          <input type="text" id="contact" required placeholder="กรอกเบอร์โทรศัพท์ หรือ Line ID">
+        </div>
+        <div class="form-group">
+          <label for="items">รายการสินค้า *</label>
+          <input type="text" id="items" required placeholder="ระบุรายการสินค้าที่ต้องการ">
+        </div>
+        <div class="form-group">
+          <label for="total">จำนวนเงินรวม (บาท) *</label>
+          <input type="number" id="total" required placeholder="0">
+        </div>
+        <div class="form-group">
+          <label for="note">หมายเหตุ</label>
+          <textarea id="note" rows="3" placeholder="ข้อความเพิ่มเติม (ถ้ามี)"></textarea>
+        </div>
+        <button type="submit" class="btn" style="width: 100%;">ยืนยันสั่งซื้อ</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Room Scent. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
